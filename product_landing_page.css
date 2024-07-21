@@ -1,0 +1,246 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: 'Baskervville', serif;
+    display: block;
+    background-color: rgb(240,241,243);
+}
+
+header {
+    position: fixed;
+    height: 66px;
+    width: 100%;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10vw;
+    z-index: 999;
+}
+
+#header-img {
+    position: relative;
+    top: -2.5vh;
+    left: 6vw;
+    height: 10rem;
+    width: auto;
+    margin-left: 2vw;
+}
+
+#header-slogan {
+    position: relative;
+    margin-left: 12vw;
+    font-size: 2rem;
+    font-family: 'Lobster';
+    top: 0.5rem;
+}
+nav {
+    width: 20%;
+    height: 60px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    padding-top: 1rem;
+    height: 100%;
+    color: black;
+}
+
+nav > ul > li {
+    margin: 0 1rem;
+    padding: 0;
+    display: block;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    padding: 2rem 0.5rem;
+    color: inherit;
+}
+nav > ul > li > a:hover {
+    background-color: rgba(202, 238, 238, 0.915);
+    color: orange;
+}
+a:visited {
+    color: black;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    padding-top: 15vh;
+}
+
+#hero > h2 {
+    word-wrap: break-word;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hero-sub-msg {
+    font-style: italic;
+    font-size: 1.6rem;
+ 
+    margin-bottom: 20px;
+}
+
+#email {
+    display: block;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 3rem;
+    padding-left: 10px;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    background-color: orange;
+    font-size: large;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: orangered;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#feature {
+    display: flex;
+    flex-direction: column; /* Stack feature items vertically */
+    gap: 20px; /* Space between each feature item */
+    padding: 10vh 20vw;
+}
+
+.feature {
+    width: 65%;
+    height: 12vh;
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start; /* Align items at the start (top) */
+    gap: 20px; /* Consistent space between the icon and content */
+}
+
+.feature-icon {
+    color: orange;
+    width: 4rem;
+    height: auto;
+    margin-top: 1.2rem;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column; /* Stack heading and sub-content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    line-height: 1.5; /* Improve readability */
+    margin-left: 2rem;
+    align-items: left;
+    width: 91vw;
+}
+.feature-heading {
+    margin: 0; /* Remove default margin */
+    font-size: 2.4rem; /* Customize font size for the heading */
+    color: orange;
+}
+
+.feature-sub-content {
+    margin: 5px 0 0; /* Add margin to the top of the sub-content */
+    color: #777; /* Customize color for sub-content */
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#video {
+    margin: 8vh 36vw 8vh 0;
+}
+
+#price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 66%;
+    height: 320px;
+    margin-right: 50rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.item-name {
+    width: 100%;
+    background-color: #928e8e;
+    font-size: 24px;
+    color: orange;
+    padding: 6px;
+}
+
+.item-price {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.item-description > p {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #cdbebe;
+    color: coral;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .author, footer > .contact {
+    font-size: 24px;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #header-slogan {
+        display: none;
+    }
+}
